@@ -1,0 +1,35 @@
+message THURSDAY {
+   message HISTORY1 {
+      required string type = 1;
+      required string name = 2;
+      required string teacher = 3;
+      required string classroom = 4;
+      required string timeEnd = 5;
+   }
+   required string Hack = 1;
+   message HISTORY23 {
+      required string type = 6;
+      required string name = 7;
+      required string teacher = 8;
+      required string classroom = 9;
+      required string timeStart = 10;
+      required string timeEnd = 11;
+   }
+   message MATH1 {
+      required string type = 12;
+      required string name = 13;
+      required string teacher = 14;
+      required string classroom = 15;
+      required string timeStart = 16;
+      required string timeEnd = 17;
+   }
+   message MATH2 {
+      required string type = 18;
+      required string name = 19;
+      required string teacher = 20;
+      required string classroom = 21;
+      required string timeStart = 22;
+      required string timeEnd = 23;
+   }
+   required string Hack2 = 2;
+}
