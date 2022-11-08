@@ -12,12 +12,19 @@ def get_value_id(layer_number:int):
         counters[layer_number]=1
     return counters[layer_number]
 
+def get_type(s: str) -> str:
+    if s.isdigit():
+        return "int32"
+    if s.replace('.', "2", 1).isdigit():
+        return "float"
+    return "string"
+
 def print_branch(dic: dict, layer: int, f):
     global counter
     for i in dic.keys():
         if type(dic[i]) == str:
             counter+=1
-            sting = "   "*(layer) + f'required string {i} = {get_value_id(layer)};' #TODO id of memory and type
+            sting = "   "*(layer) + f'required {get_type(dic[i])} {i} = {get_value_id(layer)};' #TODO id of memory and type
             f.write(sting+'\n')
             #print(sting)
         else:

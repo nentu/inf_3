@@ -1,5 +1,8 @@
 Thursday:
   History1:
+    students:
+      st1:
+        name: 12.5
     type: "lecture"
     name: "Наука и техника в истории цивилизации"
     teacher: "Белоусов Александр Сергеевич"

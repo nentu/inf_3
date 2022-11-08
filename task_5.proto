@@ -1,5 +1,10 @@
 message THURSDAY {
    message HISTORY1 {
+      message STUDENTS {
+         message ST1 {
+            required float name = 1;
+         }
+      }
       required string type = 1;
       required string name = 2;
       required string teacher = 3;

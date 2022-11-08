@@ -1,5 +1,5 @@
 import re
-from task_1 import print_dict
+from task_1 import print_dict, ch_values
 
 
 def get_level(i):
@@ -9,7 +9,7 @@ main = dict()
 
 f = open("original.yml", 'r', encoding="utf-8").readlines()
 
-find_key_value = re.compile(r'(.*): (".*")')
+find_key_value = re.compile(r'(.*): "?(.*)"?')
 find_header = re.compile(r'(.*):')
 
 for i in f:
@@ -27,6 +27,8 @@ for i in f:
         # print(layer, i)
     else:
         key, value = find_key_value.search(i).groups()
+
+        value = ch_values(value)
 
         t = main
         for _ in range(layer):

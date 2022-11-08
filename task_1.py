@@ -1,6 +1,6 @@
 f = open("original.yml", 'r', encoding="utf-8").readlines()
 
-def if_need_comma(i: int, dict: dict) -> None:
+def if_need_comma(i: int, dict: dict) -> int:
     return int(i != list(dict.keys())[-1])
 
 def print_branch(dic: dict, layer: int, if_comma:int, f):
@@ -37,6 +37,13 @@ def get_level(s: str) -> int:
             break
     return ans//2
 
+def ch_values(s: str) -> str:
+    if s[0]!= '"':
+        s = '"' + s
+    if s[-1]!='"':
+        s+='"'
+    return s
+
 if __name__ == "__main__":
     main = dict()
     for i in f:
@@ -54,6 +61,8 @@ if __name__ == "__main__":
             ##print(layer, i)
         else:
             key, value = i.split(": ")
+
+            value = ch_values(value)
 
             t = main
             for _ in range(layer):

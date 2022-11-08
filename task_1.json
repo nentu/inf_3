@@ -1,6 +1,11 @@
 {
    "Thursday":{
       "History1":{
+         "students":{
+            "st1":{
+               "name": "Artem"
+            }
+         },
          "type": "lecture",
          "name": "Наука и техника в истории цивилизации",
          "teacher": "Белоусов Александр Сергеевич",
