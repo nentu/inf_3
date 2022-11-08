@@ -22,7 +22,7 @@ message THURSDAY {
    }
    message MATH1 {
       required string type = 12;
-      required string name = 13;
+      repeated string name = 13;
       required string teacher = 14;
       required string classroom = 15;
       required string timeStart = 16;
