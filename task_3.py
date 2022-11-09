@@ -16,6 +16,8 @@ for i in f:
     layer = get_level(i)
     i = i.replace('\n', '')
     i = i.strip()
+    if i == "":
+        continue
     if ':' == i[-1]:
         i = find_header.search(i).group(1)
 
