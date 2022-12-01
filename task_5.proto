@@ -1,40 +1,61 @@
 message THURSDAY {
    message HISTORY1 {
-      message STUDENTS {
-         message ST1 {
-            required float name = 1;
-         }
-      }
       required string type = 1;
       required string name = 2;
-      required string teacher = 3;
-      required string classroom = 4;
-      required string timeEnd = 5;
+      message TEACHER {
+         required string surname = 1;
+         required string name = 2;
+         required string patronymic = 3;
+      }
+      message PLACE {
+         required string building = 4;
+         required int32 classroom = 5;
+      }
+      required string timeEnd = 3;
    }
-   required string Hack = 1;
-   message HISTORY23 {
-      required string type = 6;
-      required string name = 7;
-      required string teacher = 8;
-      required string classroom = 9;
+   message HISTORY2 {
+      required string type = 4;
+      required string name = 5;
+      message TEACHER {
+         required string surname = 6;
+         required string name = 7;
+         required string patronymic = 8;
+      }
+      message PLACE {
+         required string building = 9;
+         required int32 classroom = 10;
+      }
+      required string timeStart = 6;
+      required string timeEnd = 7;
+   }
+   message MATH1 {
+      required string type = 8;
+      required string name = 9;
+      message TEACHER {
+         required string surname = 11;
+         required string name = 12;
+         required string patronymic = 13;
+      }
+      message PLACE {
+         required string building = 14;
+         required int32 classroom = 15;
+      }
       required string timeStart = 10;
       required string timeEnd = 11;
    }
-   message MATH1 {
-      required string type = 12;
-      repeated string name = 13;
-      required string teacher = 14;
-      required string classroom = 15;
-      required string timeStart = 16;
-      required string timeEnd = 17;
-   }
    message MATH2 {
-      required string type = 18;
-      required string name = 19;
-      required string teacher = 20;
-      required string classroom = 21;
-      required string timeStart = 22;
-      required string timeEnd = 23;
+      required string type = 12;
+      required string name = 13;
+      message TEACHER {
+         required string surname = 16;
+         required string name = 17;
+         required string patronymic = 18;
+      }
+      message PLACE {
+         required string building = 19;
+         required int32 classroom = 20;
+      }
+      required string timeStart = 14;
+      required string timeEnd = 15;
    }
-   required string Hack2 = 2;
 }

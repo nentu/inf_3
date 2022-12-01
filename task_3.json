@@ -1,51 +1,63 @@
 {
    "Thursday":{
       "History1":{
-         "type": "lecture",
-         "name": "Наука и техника в истории цивилизации",
+         "type": lecture",
+         "name": Наука и техника в истории цивилизации",
          "teacher":{
-            "surname": "Белоусов",
-            "name": "Александр",
-            "patronymic": "Сергеевич"
+            "surname": Бе:лоусов",
+            "name": Александр",
+            "patronymic": Сергеевич"
          },
-         "classroom": "Ауд. 2337 (бывш. 332), Кронверкский пр., д.49, лит.А",
-         "timeEnd": "16:50"
+         "place":{
+            "building": Кронверкс}кий пр., д.49, лит.А",
+            "classroom": 2337
+         },
+         "timeEnd": 16:50"
       },
       "History2":{
-         "type": "practice",
-         "name": "Наука и техника в истории цивилизации",
+         "type": practice",
+         "name": Наука и техника в истории цивилизации",
          "teacher":{
-            "surname": "Белоусов",
-            "name": "Александр",
-            "patronymic": "Сергеевич"
+            "surname": Белоусов",
+            "name": Александр",
+            "patronymic": Сергеевич"
          },
-         "classroom": "Ауд. 2336 (бывш. 329), Кронверкский пр., д.49, лит.А",
-         "timeStart": "17:00",
-         "timeEnd": "18:30"
+         "place":{
+            "building": Кронверкский пр., д.49, лит.А",
+            "classroom": 2336
+         },
+         "timeStart": 17:00",
+         "timeEnd": 18:30"
       },
       "Math1":{
-         "type": "lecture",
-         "name": "Математика (продвинутый уровень)",
+         "type": lecture",
+         "name": Математика (продвинутый уровень)",
          "teacher":{
-            "surname": "Абжандадзе",
-            "name": "Зураб",
-            "patronymic": "Леванович"
+            "surname": Абжандадзе",
+            "name": Зураб",
+            "patronymic": Леванович"
          },
-         "classroom": "Ауд. 1229 (бывш. 285), Кронверкский пр., д.49, лит.А",
-         "timeStart": "18:40",
-         "timeEnd": "20:10"
+         "place":{
+            "building": Кронверкский пр., д.49, лит.А",
+            "classroom": 1229
+         },
+         "timeStart": 18:40",
+         "timeEnd": 20:10"
       },
       "Math2":{
-         "type": "lecture",
-         "name": "Математика (продвинутый уровень)",
+         "type": lecture",
+         "name": Математика (продвинутый уровень)",
          "teacher":{
-            "surname": "Абжандадзе",
-            "name": "Зураб",
-            "patronymic": "Леванович"
+            "surname": Абжандадзе",
+            "name": Зураб",
+            "patronymic": Леванович"
          },
-         "classroom": "Ауд. 1229 (бывш. 285), Кронверкский пр., д.49, лит.А",
-         "timeStart": "20:20",
-         "timeEnd": "21:50"
+         "place":{
+            "building": Кронверкский пр., д.49, лит.А",
+            "classroom": 2337
+         },
+         "timeStart": 20:20",
+         "timeEnd": 21:50"
       }
    }
 }

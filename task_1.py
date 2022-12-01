@@ -17,6 +17,12 @@ def print_branch(dic: dict, layer: int, if_comma:int, f):
     sting = "   " * (layer) +'}' + ','*if_comma
     f.write(sting + '\n')
 
+def get_type(s: str) -> str:
+    if s.isdigit():
+        return "int32"
+    if s.replace('.', "2", 1).isdigit():
+        return "float"
+    return "string"
 
 def print_dict(main: dict, file_name: str) -> None:
     f = open(file_name, 'w', encoding='utf-8')
@@ -34,10 +40,12 @@ def get_level(s: str) -> int:
     return ans//2
 
 def ch_values(s: str) -> str:
-    if s[0]!= '"':
-        s = '"' + s
-    if s[-1]!='"':
-        s+='"'
+
+    if get_type(s) == "string":
+        if s[0]!= '"' and s[-1]!= '"':
+            s = '"' + s + '"'
+
+
     return s
 
 if __name__ == "__main__":

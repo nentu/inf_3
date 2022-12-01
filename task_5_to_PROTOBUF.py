@@ -1,5 +1,5 @@
 f = open("original.yml", 'r', encoding="utf-8").readlines()
-
+from task_1 import get_type
 def if_need_comma(i: int, dict: dict):
     return int(i != list(dict.keys())[-1])
 
@@ -12,12 +12,7 @@ def get_value_id(layer_number:int):
         counters[layer_number]=1
     return counters[layer_number]
 
-def get_type(s: str) -> str:
-    if s.isdigit():
-        return "int32"
-    if s.replace('.', "2", 1).isdigit():
-        return "float"
-    return "string"
+
 
 def print_branch(dic: dict, layer: int, f):
     global counter
